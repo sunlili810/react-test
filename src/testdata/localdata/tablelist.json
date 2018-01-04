@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "list": [
+    {
+      "key": "1",
+      "username": "胡彦斌",
+      "rolename": "管理员",
+      "createTime": "2015-02-20 12:12:05",
+      "deadTime": "2016-02-20 12:12:05",
+      "desc": "testtest"
+    },{
+      "key": "2",
+      "username": "岳云鹏",
+      "rolename": "管理员",
+      "createTime": "2015-02-20 12:12:05",
+      "deadTime": "2016-02-20 12:12:05",
+      "desc": "testtest"
+    },{
+      "key": "3",
+      "username": "郭德纲",
+      "rolename": "管理员",
+      "createTime": "2015-02-20 12:12:05",
+      "deadTime": "2016-02-20 12:12:05",
+      "desc": "testtest"
+    },{
+      "key": "4",
+      "username": "刘若英",
+      "rolename": "普通用户",
+      "createTime": "2015-02-20 12:12:05",
+      "deadTime": "2016-02-20 12:12:05",
+      "desc": "testtest"
+    }
+  ],
+  "total": "4",
+  "message": "error"
+}

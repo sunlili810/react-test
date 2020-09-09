@@ -1,0 +1,64 @@
+import React, { Component } from 'react';
+import './videoMonitor.less';
+//import videojs from "video.js/dist/video.js";
+import videojs from 'video.js';
+import 'video.js/dist/video-js.css';
+//import videojsFlash from 'videojs-flash';
+import 'videojs-flash';
+
+
+
+
+
+class PageComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  componentDidMount(){
+    const options= {
+      autoplay: true,
+      controls: true,
+      fluid: true,
+      aspectRatio: "16:9",
+      //poster: this.props.poster,
+      techOrder: ["flash"],
+      height:200,
+    //  flash: {
+    //  swf: videojsFlash
+    //}
+    }
+    this.player = videojs('myVideo', options);
+    this.player.src({
+      src: "rtmp://58.200.131.2:1935/livetv/hunantv",
+      type:'rtmp/flv',
+    });
+    this.player.load();
+
+
+
+  }
+
+  componentWillMount() {
+    if (this.player) {
+      this.player.dispose()
+    }
+  }
+
+
+  render() {
+    return (
+      <div className="videoMonitor">
+
+        <div data-vjs-player>
+          <video id="myVideo"  className="video-js"></video>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default PageComponent;
